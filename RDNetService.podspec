@@ -9,5 +9,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Radarrrrr/RDNetService.git", :tag => "1.0.0" }
   s.source_files  = "RDNetService/*"
+  s.dependency "AFNetworking"
 
 end
