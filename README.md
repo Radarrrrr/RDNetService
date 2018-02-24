@@ -7,6 +7,10 @@
 pod "RDNetService"
 
 
+Change Log
+
+v1.0 创建pods库
+
 
 一、标准请求方式：
 
@@ -39,6 +43,7 @@ NSDictionary *headerDic = @{
 
 
 二、简易请求方式，不需要设定配置项
+
 [NetService requestGetWithURL:@"http://img63.ddimg.cn/2018/2/2/2018020214431836357.jpg" progress:^(double progress) {
         NSLog(@"进度= %f",progress);
 } success:^(id response) {
