@@ -3,6 +3,7 @@
 
 
 本类pods名为：
+
 pod "RDNetService"
 
 
@@ -10,6 +11,7 @@ pod "RDNetService"
 一、标准请求方式：
 
 //1. 设定配置项
+
 NSDictionary *headerDic = @{
                                 @"Content-Type":@"application/x-www-form-urlencoded",
                                 @"User-Agent":@"xxxxxxx-ios",
@@ -23,6 +25,7 @@ NSDictionary *headerDic = @{
 
 
 //2. 发送请求   
+
 [NetService requestGetWithParams:@{@"client":@"ios", @"version":@"1.0.0"} action:@"get_home" progress:^(double progress) {
         NSLog(@"进度= %f",progress);
 } success:^(id response) {
