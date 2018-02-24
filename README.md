@@ -8,6 +8,7 @@ pod "RDNetService"
 
 
 一、标准请求方式：
+
 //1. 设定配置项
 NSDictionary *headerDic = @{
                                 @"Content-Type":@"application/x-www-form-urlencoded",
@@ -20,7 +21,8 @@ NSDictionary *headerDic = @{
 [NetService initializeHttpHeader:headerDic];
 [NetService initializeHttpTimeOut:20];
 
-//2. 发送请求    
+
+//2. 发送请求   
 [NetService requestGetWithParams:@{@"client":@"ios", @"version":@"1.0.0"} action:@"get_home" progress:^(double progress) {
         NSLog(@"进度= %f",progress);
 } success:^(id response) {
@@ -30,6 +32,7 @@ NSDictionary *headerDic = @{
         NSLog(@"failure");
         NSLog(@"%@", errdic);
 }];
+
 
 
 二、简易请求方式，不需要设定配置项
